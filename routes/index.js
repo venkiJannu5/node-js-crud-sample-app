@@ -1,8 +1,8 @@
-var user = require('./user');
-var post = require('./post');
 
-module.exports = function (app,passport){
-	app.use('/user', user);
-	app.use('/post', post);
+var emp = require('./emp');
+
+module.exports = function (app){
+	
+	app.use('/emp',emp);
 
 }
